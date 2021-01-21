@@ -44,4 +44,4 @@ fetch('https://otakuotake.herokuapp.com/get2randomcharacters&format=json', { met
 
 Affiche le résultat
 
-Console.log(result)
+console.log(result)
