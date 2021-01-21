@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>
+   <script src="https://d3js.org/d3.v6.min.js"></script>
+   <script src="d3.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div>
+
+   
+</div>
+
+
+
+
+</body>
+<script>
+    
+
+
+
+fetch('https://otakuotake.herokuapp.com/get2randomcharacters&format=json', { method: 'GET',
+               headers: {},
+               mode: 'cors',
+               cache: 'default'}).then(
+    function(response){
+        response.json().then(function(data){result = data})
+            }
+)
+
+
+
+           for( var j=0 ;j < 4;j++){
+                
+               
+                   var firstSelect = document.createElement("img");
+                    firstSelect.setAttribute("src","https://otakuotake.herokuapp.com/images/"+result[j]["picture"]);
+                    firstSelect.setAttribute("alt","image");
+                   document.body.appendChild(firstSelect);  
+                 
+               } 
+           
+</script>
+
+
+</html>
+
