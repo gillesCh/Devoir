@@ -24,5 +24,5 @@ Données accessibles via des URL afin de pouvoir pointer dessus.
 
 
 ● Définir ce qu’est un client, ce qu’est un serveur dans le contexte du web.
-client : envoie des requêtes
-serveur : envoie des réponses
+client : envoie des requêtesau serveur
+serveur : envoie des réponses au client
