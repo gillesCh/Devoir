@@ -40,7 +40,7 @@ fetch('https://otakuotake.herokuapp.com/get2randomcharacters&format=json', { met
     function(response){
         response.json().then(function(data){result = data})
             }
-)
+);
 
 Affiche le résultat
 
